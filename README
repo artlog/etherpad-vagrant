@@ -1,5 +1,5 @@
 This project will use vagrant and puppet to 
-install a complete etherpad-lite (https://github.com/Pita/etherpad-lite)
+install a complete etherpad-lite (https://github.com/ether/etherpad-lite)
 environment in a local VM.
 
 ---
@@ -12,9 +12,9 @@ INSTALL
 
 3) Clone etherpad-lite and add etherpad-vagrant as submodule
 
-$ git clone https://github.com/Pita/etherpad-lite.git
+$ git clone https://github.com/ether/etherpad-lite.git
 $ cd etherpad-lite
-$ git submodule add https://github.com/rhelmer/etherpad-vagrant.git
+$ git submodule add https://github.com/artlog/etherpad-vagrant
 
 4) build VM and provision with puppet
 
@@ -41,4 +41,12 @@ Reboot VM and re-run puppet
 $ vagrant reload
 
 Destroy VM and rebuild from scratch
-$ vagrant desroy && vagrant up 
+$ vagrant destroy && vagrant up 
+
+___________________________________________
+
+some hacks
+
+vboxsf filesystem not found in guest ( vbox guest version not matching this of host ).
+
+vagrant plugin install vagrant-vbguest

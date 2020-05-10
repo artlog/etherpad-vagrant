@@ -1,5 +1,5 @@
-$node_version = "v0.6.14"
-$npm_version = "1.1.12"
+$node_version = "v10.19.0"
+$npm_version = "6.13.4"
 $install_base = "/home/etherpad"
 $source_base = "/home/etherpad/dev"
 $install_user = "etherpad"
